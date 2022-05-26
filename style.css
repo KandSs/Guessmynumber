@@ -22,7 +22,7 @@ body {
 header {
   position: relative;
   height: 35vh;
-  border-bottom: 7px solid #eee;
+  /* border-bottom: 7px solid #eee; */
 }
 
 main {
@@ -117,4 +117,76 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  .again {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .between {
+    top: 60px;
+    left: 40px;
+  }
+  h1 {
+    bottom: 70px;
+    left: 75%;
+    transform: translate(-50%, 50%);
+  }
+  .number {
+    bottom: -40px;
+    left: 60%;
+    padding: 1rem;
+  }
+  .guess {
+    margin-right: 25%;
+  }
+
+  main {
+    display: contents;
+  }
+
+  .check {
+    margin-top: 20px;
+    margin-right: 150px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .again {
+    padding: 1rem;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .between {
+    right: -150px;
+  }
+  h1 {
+    left: 75%;
+    transform: translate(-70%, -70%);
+  }
+  .number {
+    left: 60%;
+  }
+  main {
+    display: contents;
+  }
+  .guess {
+    text-align: center;
+    margin-top: 90px;
+  }
+  .check {
+    margin-left: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .again {
+    top: -1rem;
+    left: 2rem;
+  }
 }
